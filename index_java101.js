@@ -46,16 +46,63 @@
 
 //STEP FIVE
 //returns the total bill including the tip that has been calculated
-function totalAmount(rating, num) {
-  if (rating === "good") {
-    return (num * 0.20) + num;
-  }
-  else if (rating === "fair") {
-    return (num * 0.15) + num;
-  }
-  else if (rating === "bad") {
-    return (num * 0.10) + num;
-  };
-};
+// function totalAmount(rating, num) {
+//   if (rating === "good") {
+//     return (num * 0.20) + num;
+//   }
+//   else if (rating === "fair") {
+//     return (num * 0.15) + num;
+//   }
+//   else if (rating === "bad") {
+//     return (num * 0.10) + num;
+//   };
+// };
+//
+// console.log(totalAmount("good", 100.11));
 
-console.log(totalAmount("good", 100.11));
+//STEP SIX
+//takes the total bill, including the tip and divides it amongst the number of people given
+//
+// function splitAmount(rating, num, people) {
+//   if (rating === "good") {
+//       return ((num * 0.20) + num) / people;
+//     }
+//     else if (rating === "fair") {
+//       return ((num * 0.15) + num) / people;
+//     }
+//     else if (rating === "bad") {
+//       return ((num * 0.10) + num) / people;
+//     };
+//   };
+//
+// console.log(splitAmount("bad", 100, 4));
+
+//STEP SEVEN INCOMPLETE
+//prints each number in the range given
+//Note:  If you use a return inside a function, it stops your loop
+// var number
+// function printNumbers(startNum, endNum) {
+//   for ( var i = startNum; i < endNum; i++) {
+//     console.log(i);
+//   };
+// };
+//
+// console.log(printNumbers(1, 5));
+
+    //STEP SEVEN PART TWO
+// function printNumbers(startNum, endNum) {
+//    var startNum = startNum += 1;
+//   while ( startNum < endNum) {
+//     conso "This is the number: " + startNum;
+//
+//   };
+// };
+// console.log(printNumbers(2, 5));
+
+//STEP EIGHT INCOMPLETE
+// // takes the size and makes a square of that width and height using asterisks
+// function printSquare(size) {
+//   return size * "*";
+// }
+//
+// console.log(printSquare(3));
