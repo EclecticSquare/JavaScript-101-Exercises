@@ -90,14 +90,16 @@
 // console.log(printNumbers(1, 5));
 
     //STEP SEVEN PART TWO
-// function printNumbers(startNum, endNum) {
-//    var startNum = startNum += 1;
-//   while ( startNum < endNum) {
-//     conso "This is the number: " + startNum;
-//
-//   };
-// };
-// console.log(printNumbers(2, 5));
+    //Note:  If you use return inside a fucntion it stops the loop
+function printNumbers(startNum, endNum) {
+   var startNum = startNum++;
+  while ( startNum <= endNum) {
+    console.log(startNum);
+    startNum++;
+
+  };
+};
+console.log(printNumbers(2, 5));
 
 //STEP EIGHT INCOMPLETE
 // // takes the size and makes a square of that width and height using asterisks
