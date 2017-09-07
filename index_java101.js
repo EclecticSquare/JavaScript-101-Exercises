@@ -77,7 +77,7 @@
 //
 // console.log(splitAmount("bad", 100, 4));
 
-//STEP SEVEN INCOMPLETE
+//STEP SEVEN
 //prints each number in the range given
 //Note:  If you use a return inside a function, it stops your loop
 // var number
@@ -90,21 +90,24 @@
 // console.log(printNumbers(1, 5));
 
     //STEP SEVEN PART TWO
-    //Note:  If you use return inside a fucntion it stops the loop
-function printNumbers(startNum, endNum) {
-   var startNum = startNum++;
-  while ( startNum <= endNum) {
-    console.log(startNum);
-    startNum++;
-
-  };
-};
-console.log(printNumbers(2, 5));
+    //Note:  If you use return inside a function it stops the loop
+// function printNumbers(startNum, endNum) {
+//    var startNum = startNum++;
+//   while ( startNum <= endNum) {
+//     console.log(startNum);
+//     startNum++;
+//
+//   };
+// };
+// console.log(printNumbers(2, 5));
 
 //STEP EIGHT INCOMPLETE
-// // takes the size and makes a square of that width and height using asterisks
+// takes the size and makes a square of that width and height using asterisks
 // function printSquare(size) {
-//   return size * "*";
-// }
+//   var star = "*";
+// for (var i = 0; i < size; i++){
+//   console.log(star.repeat(size));
+// };
+// };
 //
 // console.log(printSquare(3));
