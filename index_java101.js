@@ -43,3 +43,19 @@
 // };
 //
 // console.log(tipAmount("bad", 100.10));
+
+//STEP FIVE
+//returns the total bill including the tip that has been calculated
+function totalAmount(rating, num) {
+  if (rating === "good") {
+    return (num * 0.20) + num;
+  }
+  else if (rating === "fair") {
+    return (num * 0.15) + num;
+  }
+  else if (rating === "bad") {
+    return (num * 0.10) + num;
+  };
+};
+
+console.log(totalAmount("good", 100.11));
