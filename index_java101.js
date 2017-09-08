@@ -129,13 +129,66 @@
 
 //STEP TEN
 //prints a banner of stars around the text given
-var banText = prompt("Enter a sentence. ");
-function printBanner(string) {
-    var star = "*";
-    console.log(star.repeat(banText.length));
-    console.log
-    console.log(star.repeat(banText.length));
-  //};
-};
+// var banText = prompt("Enter a sentence. ");
+// function printBanner(string) {
+//     var star = "*";
+//     console.log(star.repeat(banText.length + 4));
+//     console.log("* " + banText + " *");
+//     console.log(star.repeat(banText.length + 4));
+//   //};
+// };
+//
+// console.log(printBanner(banText));
 
-console.log(printBanner(banText));
+//STEP ELEVEN INCOMPLETE
+//returns an array of the factors of a given number
+//
+// function factors(num) {
+//   while (num %)
+//
+// }
+
+
+// //CAESAR CIPHER
+// // creates a coded alphabet where another letter is represented by another random letter
+// //Note: In javascript you can treat strings like arrays
+// //to decrypt this code just do the opposite of line 157, you would add the offset
+// function cc(message, offset) {
+//   var alphabet = "abcdefghijklmnopqrstuvwxyz";
+//   var output = " ";
+//
+//   for (var i = 0; i < message.length; i++) {
+//     var letter = message[i];
+//
+//     var position = alphabet.indexOf(letter); // position is an integer
+//
+//     var newPosition = position - offset; // newPosition is a number
+//
+//     if (newPosition < 0) {
+//       newPosition += 26;
+//     }
+//
+//     var newLetter = alphabet[newPosition];
+//
+//     output += newLetter;
+// }
+//   console.log(output);
+// }
+// cc("tina", 2);
+
+
+//POSITIVE NUMBERS
+//returns new array with just the postive numbers
+// 
+// var newArray = []; // put new array here because it needs to exist before we need it
+// function postiveNumbers(array) {
+//   for (var i = 0; i < array.length; i++) {
+//     var number = array[i];
+//     if (number > 0) {
+//         newArray.push(number);
+//     }
+//   }
+//   return newArray;
+// }
+//
+// console.log(postiveNumbers([2, 4, -3, -1]));
