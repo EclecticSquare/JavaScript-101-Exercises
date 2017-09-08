@@ -114,15 +114,28 @@
 
 //STEP NINE
 //makes a square using given size but is empty in the middle
+//
+// function printBox(width, height) {
+//   var star = "*";
+//   var space = " "
+//   console.log(star.repeat(width));
+//   for (var i =0; i < height - 2; i++)
+//   console.log("*" + (space.repeat(width - 2)) + "*");
+//
+//   console.log(star.repeat(width));
+// };
+//
+// console.log(printBox(10, 4));
 
-function printBox(width, height) {
-  var star = "*";
-  var space = " "
-  console.log(star.repeat(width));
-  for (var i =0; i < height; i++)
-  console.log("*" + (space.repeat(width - 2)) + "*");
-
-  console.log(star.repeat(width));
+//STEP TEN
+//prints a banner of stars around the text given
+var banText = prompt("Enter a sentence. ");
+function printBanner(string) {
+    var star = "*";
+    console.log(star.repeat(banText.length));
+    console.log
+    console.log(star.repeat(banText.length));
+  //};
 };
 
-console.log(printBox(8, 5));
+console.log(printBanner(banText));
