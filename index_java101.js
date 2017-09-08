@@ -101,7 +101,7 @@
 // };
 // console.log(printNumbers(2, 5));
 
-//STEP EIGHT INCOMPLETE
+//STEP EIGHT
 // takes the size and makes a square of that width and height using asterisks
 // function printSquare(size) {
 //   var star = "*";
@@ -111,3 +111,18 @@
 // };
 //
 // console.log(printSquare(3));
+
+//STEP NINE
+//makes a square using given size but is empty in the middle
+
+function printBox(width, height) {
+  var star = "*";
+  var space = " "
+  console.log(star.repeat(width));
+  for (var i =0; i < height; i++)
+  console.log("*" + (space.repeat(width - 2)) + "*");
+
+  console.log(star.repeat(width));
+};
+
+console.log(printBox(8, 5));
