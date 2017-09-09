@@ -142,24 +142,24 @@
 
 //STEP ELEVEN
 //returns an array of the factors of a given number
+//
+// var newArray = [];
+// function factors(num) {
+//   for (i = 0; i < num + 1; i++) { //used to iterate through all numbers in num
+//     if (num % i === 0) {  //checks to see if the number is a factor of num by checking for a remainder of 0
+//       newArray.push(i);  // adds any number that gives a 0 remainder to the array
+//       console.log(newArray);
+//     }
+//   }
+// }
+//
+// console.log(factors(15));
 
-var newArray = [];
-function factors(num) {
-  for (i = 0; i < num + 1; i++) { //used to iterate through all numbers in num
-    if (num % i === 0) {  //checks to see if the number is a factor of num by checking for a remainder of 0
-      newArray.push(i);  // adds any number that gives a 0 remainder to the array
-      console.log(newArray);
-    }
-  }
-}
-
-console.log(factors(15));
-
-
+//STEP TWELVE
 // //CAESAR CIPHER
 // // creates a coded alphabet where another letter is represented by another random letter
 // //Note: In javascript you can treat strings like arrays
-// //to decrypt this code just do the opposite of line 157, you would add the offset
+// //to decrypt this code just do the opposite of line with offset, you would add the offset
 // function cc(message, offset) {
 //   var alphabet = "abcdefghijklmnopqrstuvwxyz";
 //   var output = " ";
@@ -182,6 +182,37 @@ console.log(factors(15));
 //   console.log(output);
 // }
 // cc("tina", 2);
+
+
+//STEP THIRTEEN INCOMPLETE: WHY DOES THE Y KEEP COMING UP UNDEFINED 
+// should decrypt a caesar cipher given the message and the offset
+
+function decipher(message, offset) {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var output = " ";
+
+  for (var i = 0; i < message.length; i++) {
+    var letter = message[i];
+
+    var position = alphabet.indexOf(letter); // position is an integer
+
+    var newPosition = position + offset; // newPosition is a number
+
+    if (newPosition < 0) {
+      newPosition += 26;
+    }
+
+    var newLetter = alphabet[newPosition];
+
+    output += newLetter;
+}
+  console.log(output);
+}
+decipher("rgly", 2);
+
+
+
+
 
 
 //POSITIVE NUMBERS
