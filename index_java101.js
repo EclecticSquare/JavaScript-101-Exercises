@@ -140,13 +140,20 @@
 //
 // console.log(printBanner(banText));
 
-//STEP ELEVEN INCOMPLETE
+//STEP ELEVEN
 //returns an array of the factors of a given number
-//
-// function factors(num) {
-//   while (num %)
-//
-// }
+
+var newArray = [];
+function factors(num) {
+  for (i = 0; i < num + 1; i++) { //used to iterate through all numbers in num
+    if (num % i === 0) {  //checks to see if the number is a factor of num by checking for a remainder of 0
+      newArray.push(i);  // adds any number that gives a 0 remainder to the array
+      console.log(newArray);
+    }
+  }
+}
+
+console.log(factors(15));
 
 
 // //CAESAR CIPHER
@@ -179,7 +186,7 @@
 
 //POSITIVE NUMBERS
 //returns new array with just the postive numbers
-// 
+//
 // var newArray = []; // put new array here because it needs to exist before we need it
 // function postiveNumbers(array) {
 //   for (var i = 0; i < array.length; i++) {
